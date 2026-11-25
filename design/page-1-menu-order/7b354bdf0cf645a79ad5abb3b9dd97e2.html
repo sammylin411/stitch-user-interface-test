@@ -1,0 +1,764 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "secondary": "#8f4e00",
+        "on-tertiary-fixed-variant": "#374c30",
+        "on-tertiary": "#ffffff",
+        "surface": "#fdf9f2",
+        "tertiary-fixed-dim": "#b5cea9",
+        "on-secondary-fixed": "#2e1500",
+        "surface-tint": "#b02e16",
+        "inverse-surface": "#31302c",
+        "outline-variant": "#e1bfb8",
+        "primary-fixed": "#ffdad3",
+        "surface-bright": "#fdf9f2",
+        "surface-container-highest": "#e6e2db",
+        "error": "#ba1a1a",
+        "secondary-fixed": "#ffdcc2",
+        "tertiary-container": "#5b7152",
+        "primary-fixed-dim": "#ffb4a5",
+        "on-surface": "#1c1c18",
+        "error-container": "#ffdad6",
+        "tertiary-fixed": "#d1eac3",
+        "surface-container-low": "#f7f3ec",
+        "secondary-container": "#fea047",
+        "surface-variant": "#e6e2db",
+        "surface-container-high": "#ebe8e1",
+        "on-primary-fixed-variant": "#8e1400",
+        "on-error-container": "#93000a",
+        "secondary-fixed-dim": "#ffb77a",
+        "inverse-on-surface": "#f4f0e9",
+        "on-primary-container": "#ffe8e4",
+        "on-secondary": "#ffffff",
+        "on-primary-fixed": "#3e0400",
+        "on-background": "#1c1c18",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#43583b",
+        "on-error": "#ffffff",
+        "on-tertiary-fixed": "#0d2008",
+        "primary": "#a0220b",
+        "surface-dim": "#dddad3",
+        "on-secondary-container": "#6d3a00",
+        "on-primary": "#ffffff",
+        "on-tertiary-container": "#dbf4cd",
+        "on-surface-variant": "#59413c",
+        "primary-container": "#c23b22",
+        "outline": "#8d706b",
+        "background": "#fdf9f2",
+        "surface-container": "#f1ede6",
+        "on-secondary-fixed-variant": "#6d3a00",
+        "inverse-primary": "#ffb4a5"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-xl": "2rem",
+        "margin": "2.5rem",
+        "space-sm": "0.5rem",
+        "margin-sm": "1rem",
+        "gutter": "1.5rem",
+        "space-md": "1rem",
+        "gutter-sm": "1rem",
+        "space-lg": "1.5rem",
+        "space-xs": "0.25rem"
+      },
+      "fontFamily": {
+        "headline-lg": ["Newsreader"],
+        "label-lg": ["Plus Jakarta Sans"],
+        "label-md": ["Plus Jakarta Sans"],
+        "title-md": ["Plus Jakarta Sans"],
+        "body-lg": ["Plus Jakarta Sans"],
+        "price-lg": ["Plus Jakarta Sans"],
+        "headline-sm": ["Newsreader"],
+        "display-lg-mobile": ["Newsreader"],
+        "headline-md": ["Newsreader"],
+        "body-md": ["Plus Jakarta Sans"],
+        "headline-lg-mobile": ["Newsreader"],
+        "display-lg": ["Newsreader"]
+      },
+      "fontSize": {
+        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "700"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "price-lg": ["20px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+        "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "headline-lg-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "600"}],
+        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-secondary-container/20 px-margin-sm md:px-margin py-space-xs text-center"><div class="flex items-center justify-center gap-space-sm text-on-secondary-container"><span class="material-symbols-outlined text-[16px]">local_pizza</span><span class="font-label-md text-label-md tracking-normal">Fresh &amp; Hot • 15–20 min pickup at 142 Elm St</span><span class="material-symbols-outlined text-[16px]">storefront</span></div></div><div class="w-full px-margin-sm md:px-margin flex items-center justify-between gap-space-md py-space-sm"><div class="flex items-center gap-space-md"><img alt="Sam's Pizza Minimal Logo" class="h-14 w-auto object-contain transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1XucuyzLnixnmnsQmyvXa8G-GopL2TLqzrIYZSooSAWb34FaaU5KM_wxW16FXqLMavnOnWELZgiyFARc3w_SNyv9y6VWgas3uMQktMqas4ufMI0slygFVdbdy1s0P6KO0ctJc_kTqNKkR-aXJzPiGpbGbWBEnqZ6fyBr7jYmppIpJuYt6k4P8XUiHpaD-pg182Rne1ykaMQkfz2L76yb-z8MphraqQahEqIc0JsSXESdFUC8rboCuWDhg6u"><div class="flex flex-col justify-center"><span class="font-display-lg text-headline-lg font-serif leading-none text-primary tracking-tight font-bold">Sam's Pizza</span><span class="font-body-md text-body-md text-on-surface-variant tracking-normal font-medium mt-space-xs">Artisanal Wood-Fired Trattoria</span></div></div><nav class="flex items-center bg-surface-container-low p-space-xs rounded-full shadow-[0_1px_4px_rgba(35,32,29,0.04)]" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-all duration-200 flex items-center bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="menu-and-order" href="#">1. Menu &amp; Order</a><div class="w-4 h-0.5 bg-outline-variant/60 mx-space-xs rounded-full"></div><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all duration-200 flex items-center" data-path="ready-to-pay" href="#">2. Ready to Pay</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold">Pickup Counter</span><span class="font-body-md text-body-md text-tertiary font-medium">Order Line Open</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full relative overflow-hidden bg-surface-container-low py-space-xl px-margin-sm md:px-margin mb-space-lg">
+<div class="absolute -top-16 -right-16 w-96 h-96 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 left-1/4 w-80 h-80 rounded-full bg-primary/5 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary/10 text-secondary">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span class="font-label-md text-label-md tracking-wider uppercase font-semibold">Slow Fermented • 800° Stone Oven</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">
+          Handcrafted <span class="text-primary italic font-serif">Woodfired</span> Pizza
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Baked with passion in our 800° stone deck oven. Authentic slow-fermented Neapolitan dough with imported San Marzano D.O.P. and fior di latte.
+        </p>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-md">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">schedule</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider block">Pickup Ready In</span>
+<span class="font-price-lg text-price-lg text-on-surface">15–20 Minutes</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-sm md:px-margin w-full pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 flex flex-col space-y-space-xl">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs no-scrollbar">
+<a class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-lg text-label-lg transition-all shadow-sm flex items-center gap-space-xs shrink-0" href="#pizzas-sec">
+<span class="material-symbols-outlined text-[18px]">local_pizza</span>
+            Pizzas
+          </a>
+<a class="px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-all shrink-0 flex items-center gap-space-xs" href="#sides-sec">
+<span class="material-symbols-outlined text-[18px]">lunch_dining</span>
+            Sides
+          </a>
+<a class="px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-all shrink-0 flex items-center gap-space-xs" href="#drinks-sec">
+<span class="material-symbols-outlined text-[18px]">local_bar</span>
+            Drinks
+          </a>
+</div>
+<section class="space-y-space-md" id="pizzas-sec">
+<div class="flex items-baseline justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">local_pizza</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Artisanal Pizzas</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">3 Specialties</span>
+</div>
+<div class="grid grid-cols-1 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md" data-item-id="pep-pizza" data-name="Pepperoni Pizza">
+<div class="md:w-48 h-44 md:h-auto rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Wood-fired artisanal pepperoni pizza fresh from an 800 degree stone deck oven, crispy curled pepperoni cups glistening with natural oil, melted fior di latte mozzarella, blistered crust with rustic char marks on a wooden peel, warm natural lighting, warm terracotta tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdA0eGb0NpFNEQszvXNa85lYht66nZRmjoYykcMRwY5Udy5AOHtrmqCugA-yFQFxM-hXdvXrhX1A13TtkD21APfzbu1IoDiY_-hhRcBo0NqTE5Xki90JG6L3S6cLkL8Ls3Cd2qG8Hv9OJDu8XSssqLVZO2Ax8Jg10_OSyp_hvxRVKkBSXNd8lyfKoHL05iJyFVcjQmYAIUoXrntT9Ywf_txeCTXQDSpTiaTrDRu7dK_poyRyPhDo2vFA">
+<span class="absolute top-2 left-2 bg-primary text-on-primary font-label-md text-label-md px-space-xs py-0.5 rounded-full shadow-sm">Popular</span>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Pepperoni Pizza</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$12.95</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                    Rich crushed San Marzano tomato sauce, fresh mozzarella, crispy pepperoni slices baked to a bubbly crisp crust.
+                  </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap" data-sizes-group="">
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="7.00" data-size="Small" type="button">
+                      Small <span class="font-semibold text-secondary">$7.00</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="10.00" data-size="Medium" type="button">
+                      Medium <span class="font-semibold text-secondary">$10.00</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm" data-price="12.95" data-size="Large" type="button">
+                      Large <span class="font-semibold text-on-secondary">$12.95</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                      Add
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md" data-item-id="cheese-pizza" data-name="Cheese Pizza">
+<div class="md:w-48 h-44 md:h-auto rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Classic wood fired cheese pizza on a dark slate tabletop, molten fior di latte mozzarella stretch, aged parmesan golden browning, roasted Italian tomato sauce, topped with fresh basil sprig, artisanal rustic restaurant aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMUm7C6oYoUoG4CNEwligGhGkf4APnZGfhQyQjj05sSO8_xhiGUPusb2Mb5qMilzJajPqiN1AXO4IKwACQpaWV3hs70_fjPiXWWkjj5rlnULMrosxw38MxyqbPXTTM8a7rEXWQ3V2LSpFcBZ2et4R2d8_dfAdFPgk6zNSpKSqJzz8BCOT2_KyMWOCxJoI846aGSO7MkmKAALqBJJzXzG7gmF47x3eWySoVJL9zEeYSulruc4osWXmzCQ">
+<span class="absolute top-2 left-2 bg-tertiary-container text-on-tertiary-container font-label-md text-label-md px-space-xs py-0.5 rounded-full shadow-sm">Vegetarian</span>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Cheese Pizza</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$10.95</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                    House tomato sauce, melted whole-milk mozzarella, aged parmesan blend baked with a golden blistered rim.
+                  </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap" data-sizes-group="">
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="6.50" data-size="Small" type="button">
+                      Small <span class="font-semibold text-secondary">$6.50</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="9.25" data-size="Medium" type="button">
+                      Medium <span class="font-semibold text-secondary">$9.25</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm" data-price="10.95" data-size="Large" type="button">
+                      Large <span class="font-semibold text-on-secondary">$10.95</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                      Add
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md" data-item-id="eggplant-pizza" data-name="Eggplant Pizza">
+<div class="md:w-48 h-44 md:h-auto rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Gourmet wood fired pizza topped with grilled eggplant medallions, dollops of creamy white garlic ricotta cheese, fresh green basil leaves, cracked black pepper and rich red tomato sauce on sourdough crust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw21QLvFne0k2OAWJ_ZIxWk8csZqC2HldoHd6Javws3Kakb9CJRQwZCj262ecwtGGxi28GK7010u2Wb_htjFgV9NFHUF3f2S6oBxoXcPUMFUjcesoxg-q4LaEGrqhoYovEhUUX_8HPD-817RET1KQM9ChANcTjWc1zIur906P-xc_ZBJ847QWZCrYUNuCr7FE06nBqvbqKcWaW97yMgPe-3yPVJbAy7LFUcdXNuAwibPd31nhoHVHf6Q">
+<span class="absolute top-2 left-2 bg-tertiary-container text-on-tertiary-container font-label-md text-label-md px-space-xs py-0.5 rounded-full shadow-sm">Chef Special</span>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-start justify-between gap-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface">Eggplant Pizza</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$11.95</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                    Roasted eggplant medallions, whipped garlic ricotta, house red sauce, and fresh aromatic basil leaves.
+                  </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap" data-sizes-group="">
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="6.75" data-size="Small" type="button">
+                      Small <span class="font-semibold text-secondary">$6.75</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="9.75" data-size="Medium" type="button">
+                      Medium <span class="font-semibold text-secondary">$9.75</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm" data-price="11.95" data-size="Large" type="button">
+                      Large <span class="font-semibold text-on-secondary">$11.95</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                      Add
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-space-md pt-space-md" id="sides-sec">
+<div class="flex items-baseline justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">lunch_dining</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Savory Sides</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Crisp &amp; Fresh</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-item-id="fries" data-name="Fries">
+<div>
+<div class="w-full h-40 rounded-lg overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Crispy golden russet hand cut French fries served in a paper cone with fresh sea salt sprinkles and aromatic rosemary needles, side of rustic aioli dip, warm restaurant tabletop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnsLHCKodDHBs1tfxCMKFRYrecq0s7W6t_1dtkuc_PyWB7MKIgfd7BHmNjXwkkjb2kWpeIWU2oT7FrxH0PKubgo3YH4GUCEz_3d1W7iBIKVszK0P-zzJIjNqLblwcLfNqUZdapWvmGpqFiSP4WR6UZQpC-_Vpjn7Fxx2IoApGqazj9iJHIkZQHVBGR8Lu1ekixPLXYPuK_gRnJBrK6eyax6AJLNYn5fwrTUJ0gde0Pugmw89cvzb2m0w">
+</div>
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fries</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$4.50</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Golden crisp russet fries tossed with coarse sea salt and freshly picked rosemary.
+                </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs justify-center" data-sizes-group="">
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="3.50" data-size="Small" type="button">
+                    Small <span class="font-semibold text-secondary">$3.50</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm" data-price="4.50" data-size="Large" type="button">
+                    Large <span class="font-semibold text-on-secondary">$4.50</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add
+                  </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-item-id="greek-salad" data-name="Greek Salad">
+<div>
+<div class="w-full h-40 rounded-lg overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Traditional fresh Greek salad in a ceramic bowl with crisp romaine lettuce, dark Kalamata olives, cubed authentic feta cheese, sliced Persian cucumbers, red onion rings, dressed with oregano vinaigrette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGRYsfc51OMSVX2rB9OpHy6K-4R7eum9XsGBS2QXpij_3tueCrnA8sQS0T3X9gtykMtYBIFsmGaHBW8gNboibQS-nJxqhMNB3dFBXAKa6psGcrvBp28tyzwie-alhgBJsxq1OwUV3JqVWl8GY-nmxu-RMWgVCeOAjeowyEsnI5JhBTP0PCuRnjfrG7o2cEiDdayG2sNEWuwf-TxUW8aA39y5QhItkGorwOY4AK9VwfY_JGwcE3MQxBUQ">
+</div>
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Greek Salad</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$7.25</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Crisp romaine, Kalamata olives, feta cheese, cucumbers, red onion, oregano vinaigrette. Single size portion.
+                </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="text-center font-label-md text-label-md text-on-surface-variant py-1">
+                  Single Size Serves 1–2 • <span class="font-semibold text-secondary">$7.25</span>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" data-fixed-price="7.25" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-space-md pt-space-md" id="drinks-sec">
+<div class="flex items-baseline justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[28px]">local_drink</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Cold Drinks</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Chilled Refreshment</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-item-id="coke" data-name="Coke">
+<div>
+<div class="w-full h-32 rounded-lg overflow-hidden mb-space-sm bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Chilled glass bottle of Coca-Cola with condensation drops, ice cubes, and lemon wedge on a rustic timber background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIPspNVzafWn-dHpebp4DX66vSGofLf79Sa8kDHwapWyr_IE7WylwPRhMpOzeyCaqzdGyAvaQ91VqhupyJLe-mT5IK4_XpIGhswLOj8NT5VgTV2WbMMesBtjbhfxvrYZN4FCWaXGP_Tok2BVoDxWrYXn6JCFYTAQwfe3IEik_tiaJhur1HOlMnpyT1gtoeKYiaezYnYBvZDs32LNLjsIqSrTUqLonlVCC1mJCqNvw7_dkkNBgeFS1ADA">
+</div>
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Coke</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$2.00</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Chilled classic Coca-Cola.
+                </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs justify-center flex-wrap" data-sizes-group="">
+<button class="px-2 py-1 rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="1.00" data-size="Small" type="button">
+                    S <span class="font-semibold text-secondary">$1</span>
+</button>
+<button class="px-2 py-1 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm" data-price="2.00" data-size="Medium" type="button">
+                    M <span class="font-semibold text-on-secondary">$2</span>
+</button>
+<button class="px-2 py-1 rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="3.00" data-size="Large" type="button">
+                    L <span class="font-semibold text-secondary">$3</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add
+                  </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-item-id="sprite" data-name="Sprite">
+<div>
+<div class="w-full h-32 rounded-lg overflow-hidden mb-space-sm bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Cold glass bottle of Sprite lemon lime soda with frosty ice cubes and green lime slice on warm wooden surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ5e9SHVe7aSj-LEmocK-orgfm5NoK2PzmtQpTioIugBoesi9PCVUr4ONAeXn6ESyIPD6LGRDt0LB_BbSISkBxCOCDoM5CSoEYcfrM-d4WT_MLC9-zHbpfLadxTiajnccWpiUYl51tQzVYXuw_NYgvhbayJbce16FmaQ2Zcg1wpDwA-ombrRunUl5_Vt0TrmQI-2JAxaUOiGvnHd5HMmAmi5VOAv1KhtQ7k0gZvBx2frhEHFBBHNm4Aw">
+</div>
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sprite</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$2.00</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Crisp lemon-lime soda.
+                </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs justify-center flex-wrap" data-sizes-group="">
+<button class="px-2 py-1 rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="1.00" data-size="Small" type="button">
+                    S <span class="font-semibold text-secondary">$1</span>
+</button>
+<button class="px-2 py-1 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm" data-price="2.00" data-size="Medium" type="button">
+                    M <span class="font-semibold text-on-secondary">$2</span>
+</button>
+<button class="px-2 py-1 rounded-full font-label-md text-label-md bg-surface text-on-surface hover:bg-surface-container-high transition-colors" data-price="3.00" data-size="Large" type="button">
+                    L <span class="font-semibold text-secondary">$3</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add
+                  </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-item-id="water" data-name="Bottled Water">
+<div>
+<div class="w-full h-32 rounded-lg overflow-hidden mb-space-sm bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Glass bottle of pure cold mountain spring water with condensation and a minimalist green leaf label on clean rustic surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8ZHBIq-SvcnBrAmmdkSjJVh2olaDq2_znAFJhmfSV4DQu_hRi_gZgzX5y8Mvf5c9OhqBoseKo4X-KUYOzCeZ8BtayktzsBL5ioD8qKDlGoySVMNet9v3YF9emov_MWEIp3OwGBdPtz3wWhf2B93eYTatuvLhA7oHhOB72ZzlurL3ZsRGje02VlcXVZvvSleHxHdtonCt1ojM9Bkm_aJ7BmVdmYCST1lH0gFb7GUdVMiF7Gw6CKlbnrA">
+</div>
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bottled Water</h3>
+<div class="font-price-lg text-price-lg text-primary" data-price-display="">$5.00</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Pure mountain spring water 500ml.
+                </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/40 rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="text-center font-label-md text-label-md text-on-surface-variant py-1">
+                  500ml Bottle • <span class="font-semibold text-secondary">$5.00</span>
+</div>
+<div class="flex items-center justify-between mt-space-xs">
+<div class="flex items-center bg-surface-container-highest rounded-full p-1">
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="minus" type="button">-</button>
+<span class="w-8 text-center font-title-md text-title-md text-on-surface" data-qty-val="">1</span>
+<button class="w-7 h-7 rounded-full bg-surface hover:bg-surface-container-low text-on-surface flex items-center justify-center font-bold" data-qty-btn="plus" type="button">+</button>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm active:scale-95" data-add-cart="" data-fixed-price="5.00" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-4">
+<div class="sticky top-28 bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low/50 -m-space-md p-space-md rounded-t-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">shopping_bag</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Your Order</h2>
+</div>
+<div class="flex items-center gap-space-xs bg-primary/10 px-space-sm py-0.5 rounded-full">
+<span class="font-label-md text-label-md font-bold text-primary" id="cart-item-count">4 Items</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-space-xs rounded-full text-center text-label-md font-label-md">
+<span class="flex-1 py-1 rounded-full bg-surface-container-lowest text-on-surface font-semibold shadow-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">storefront</span> Pickup at Counter
+            </span>
+<span class="flex-1 py-1 text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">timer</span> 15–20m
+            </span>
+</div>
+<div class="space-y-space-sm max-h-96 overflow-y-auto pr-1" id="cart-items-container">
+        <div class="flex items-center justify-between p-space-xs rounded-lg bg-surface hover:bg-surface-container-low transition-colors group">
+          <div class="flex-1 pr-2">
+            <div class="font-label-lg text-label-lg font-bold text-on-surface">Pepperoni Pizza</div>
+            <div class="font-label-md text-label-md text-on-surface-variant">
+              Large • $12.95 each
+            </div>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <div class="flex items-center bg-surface-container-highest rounded-full px-1 py-0.5">
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('pep-pizza-Large', -1)">-</button>
+              <span class="w-6 text-center font-label-md text-label-md font-semibold text-on-surface">1</span>
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('pep-pizza-Large', 1)">+</button>
+            </div>
+            <span class="font-label-lg text-label-lg font-bold text-primary w-14 text-right">$12.95</span>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-space-xs rounded-lg bg-surface hover:bg-surface-container-low transition-colors group">
+          <div class="flex-1 pr-2">
+            <div class="font-label-lg text-label-lg font-bold text-on-surface">Fries</div>
+            <div class="font-label-md text-label-md text-on-surface-variant">
+              Small • $3.50 each
+            </div>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <div class="flex items-center bg-surface-container-highest rounded-full px-1 py-0.5">
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('fries-Small', -1)">-</button>
+              <span class="w-6 text-center font-label-md text-label-md font-semibold text-on-surface">1</span>
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('fries-Small', 1)">+</button>
+            </div>
+            <span class="font-label-lg text-label-lg font-bold text-primary w-14 text-right">$3.50</span>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-space-xs rounded-lg bg-surface hover:bg-surface-container-low transition-colors group">
+          <div class="flex-1 pr-2">
+            <div class="font-label-lg text-label-lg font-bold text-on-surface">Coke</div>
+            <div class="font-label-md text-label-md text-on-surface-variant">
+              Medium • $2.00 each
+            </div>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <div class="flex items-center bg-surface-container-highest rounded-full px-1 py-0.5">
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('coke-Medium', -1)">-</button>
+              <span class="w-6 text-center font-label-md text-label-md font-semibold text-on-surface">2</span>
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('coke-Medium', 1)">+</button>
+            </div>
+            <span class="font-label-lg text-label-lg font-bold text-primary w-14 text-right">$4.00</span>
+          </div>
+        </div>
+      </div>
+<div class="space-y-space-xs pt-space-sm bg-surface-container-low/40 p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span class="">Subtotal</span>
+<span class="font-semibold text-on-surface" id="cart-subtotal">$20.45</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span class="">Estimated Tax (8.875%)</span>
+<span class="font-semibold text-on-surface" id="cart-tax">$1.81</span>
+</div>
+<div class="flex items-center justify-between font-price-lg text-price-lg text-on-surface pt-space-xs font-bold">
+<span class="">Total Due</span>
+<span class="text-primary font-bold" id="cart-total">$22.26</span>
+</div>
+</div>
+<a class="w-full py-space-sm px-space-md rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-space-xs group" data-path="ready-to-pay" href="#">
+<span class="">Ready to Pay</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant text-label-md font-label-md text-center">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="">Pay on pickup or pay now next step</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+(() => {
+  // Setup cart state with required pre-populated order
+  // 1x Large Pepperoni Pizza ($12.95), 1x Small Fries ($3.50), 2x Medium Coke ($4.00 total)
+  let order = [
+    { id: 'pep-pizza-Large', name: 'Pepperoni Pizza', size: 'Large', unitPrice: 12.95, qty: 1 },
+    { id: 'fries-Small', name: 'Fries', size: 'Small', unitPrice: 3.50, qty: 1 },
+    { id: 'coke-Medium', name: 'Coke', size: 'Medium', unitPrice: 2.00, qty: 2 }
+  ];
+
+  const cartContainer = document.getElementById('cart-items-container');
+  const cartSubtotalEl = document.getElementById('cart-subtotal');
+  const cartTaxEl = document.getElementById('cart-tax');
+  const cartTotalEl = document.getElementById('cart-total');
+  const cartCountEl = document.getElementById('cart-item-count');
+
+  function renderCart() {
+    if (!cartContainer) return;
+    
+    if (order.length === 0) {
+      cartContainer.innerHTML = `
+        <div class="text-center py-space-lg text-on-surface-variant space-y-space-xs">
+          <span class="material-symbols-outlined text-[40px] text-outline-variant">local_pizza</span>
+          <p class="font-body-md text-body-md">Your cart is empty.</p>
+          <p class="font-label-md text-label-md text-outline">Select items from the menu to start your order.</p>
+        </div>
+      `;
+      cartSubtotalEl.textContent = '$0.00';
+      cartTaxEl.textContent = '$0.00';
+      cartTotalEl.textContent = '$0.00';
+      cartCountEl.textContent = '0 Items';
+      return;
+    }
+
+    let subtotal = 0;
+    let totalItems = 0;
+
+    cartContainer.innerHTML = order.map(item => {
+      const itemTotal = (item.unitPrice * item.qty);
+      subtotal += itemTotal;
+      totalItems += item.qty;
+
+      return `
+        <div class="flex items-center justify-between p-space-xs rounded-lg bg-surface hover:bg-surface-container-low transition-colors group">
+          <div class="flex-1 pr-2">
+            <div class="font-label-lg text-label-lg font-bold text-on-surface">${item.name}</div>
+            <div class="font-label-md text-label-md text-on-surface-variant">
+              ${item.size ? item.size + ' &bull; ' : ''}$${item.unitPrice.toFixed(2)} each
+            </div>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <div class="flex items-center bg-surface-container-highest rounded-full px-1 py-0.5">
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('${item.id}', -1)">-</button>
+              <span class="w-6 text-center font-label-md text-label-md font-semibold text-on-surface">${item.qty}</span>
+              <button type="button" class="w-6 h-6 rounded-full bg-surface text-on-surface flex items-center justify-center font-bold text-xs hover:bg-primary hover:text-on-primary transition-colors" onclick="window.updateCartQty('${item.id}', 1)">+</button>
+            </div>
+            <span class="font-label-lg text-label-lg font-bold text-primary w-14 text-right">$${itemTotal.toFixed(2)}</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    const tax = subtotal * 0.08875;
+    const total = subtotal + tax;
+
+    cartSubtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+    cartTaxEl.textContent = `$${tax.toFixed(2)}`;
+    cartTotalEl.textContent = `$${total.toFixed(2)}`;
+    cartCountEl.textContent = `${totalItems} Item${totalItems === 1 ? '' : 's'}`;
+  }
+
+  window.updateCartQty = (id, delta) => {
+    const itemIndex = order.findIndex(i => i.id === id);
+    if (itemIndex > -1) {
+      order[itemIndex].qty += delta;
+      if (order[itemIndex].qty <= 0) {
+        order.splice(itemIndex, 1);
+      }
+      renderCart();
+    }
+  };
+
+  // Attach card interaction listeners
+  document.querySelectorAll('[data-item-id]').forEach(card => {
+    const itemId = card.getAttribute('data-item-id');
+    const itemName = card.getAttribute('data-name');
+    const priceDisplay = card.querySelector('[data-price-display]');
+    const qtyValEl = card.querySelector('[data-qty-val]');
+    const minusBtn = card.querySelector('[data-qty-btn="minus"]');
+    const plusBtn = card.querySelector('[data-qty-btn="plus"]');
+    const addCartBtn = card.querySelector('[data-add-cart]');
+    const sizeButtons = card.querySelectorAll('[data-sizes-group] button');
+
+    let currentQty = 1;
+    let selectedSize = null;
+    let currentPrice = null;
+
+    if (sizeButtons.length > 0) {
+      // Find currently selected size or default to last (usually Large)
+      let activeBtn = Array.from(sizeButtons).find(b => b.classList.contains('bg-secondary')) || sizeButtons[sizeButtons.length - 1];
+      selectedSize = activeBtn.getAttribute('data-size');
+      currentPrice = parseFloat(activeBtn.getAttribute('data-price'));
+
+      sizeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          sizeButtons.forEach(b => {
+            b.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-sm');
+            b.classList.add('bg-surface', 'text-on-surface');
+            const span = b.querySelector('span');
+            if (span) {
+              span.classList.remove('text-on-secondary');
+              span.classList.add('text-secondary');
+            }
+          });
+
+          btn.classList.add('bg-secondary', 'text-on-secondary', 'shadow-sm');
+          btn.classList.remove('bg-surface', 'text-on-surface');
+          const span = btn.querySelector('span');
+          if (span) {
+            span.classList.add('text-on-secondary');
+            span.classList.remove('text-secondary');
+          }
+
+          selectedSize = btn.getAttribute('data-size');
+          currentPrice = parseFloat(btn.getAttribute('data-price'));
+          if (priceDisplay) {
+            priceDisplay.textContent = `$${currentPrice.toFixed(2)}`;
+          }
+        });
+      });
+    } else if (addCartBtn && addCartBtn.hasAttribute('data-fixed-price')) {
+      currentPrice = parseFloat(addCartBtn.getAttribute('data-fixed-price'));
+      selectedSize = null;
+    }
+
+    if (minusBtn && qtyValEl) {
+      minusBtn.addEventListener('click', () => {
+        if (currentQty > 1) {
+          currentQty--;
+          qtyValEl.textContent = currentQty;
+        }
+      });
+    }
+
+    if (plusBtn && qtyValEl) {
+      plusBtn.addEventListener('click', () => {
+        currentQty++;
+        qtyValEl.textContent = currentQty;
+      });
+    }
+
+    if (addCartBtn) {
+      addCartBtn.addEventListener('click', () => {
+        const cartKey = selectedSize ? `${itemId}-${selectedSize}` : itemId;
+        const existing = order.find(i => i.id === cartKey);
+
+        if (existing) {
+          existing.qty += currentQty;
+        } else {
+          order.push({
+            id: cartKey,
+            name: itemName,
+            size: selectedSize,
+            unitPrice: currentPrice,
+            qty: currentQty
+          });
+        }
+
+        // Reset local qty
+        currentQty = 1;
+        if (qtyValEl) qtyValEl.textContent = '1';
+
+        // Feedback
+        const originalHtml = addCartBtn.innerHTML;
+        addCartBtn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span> Added`;
+        addCartBtn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+        setTimeout(() => {
+          addCartBtn.innerHTML = originalHtml;
+          addCartBtn.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+        }, 800);
+
+        renderCart();
+      });
+    }
+  });
+
+  // Initial render with pre-populated order items
+  renderCart();
+})();
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_6px_rgba(35,32,29,0.03)]"><div class="w-full px-margin-sm md:px-margin py-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="Sam's Pizza Minimal Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XucuyzLnixnmnsQmyvXa8G-GopL2TLqzrIYZSooSAWb34FaaU5KM_wxW16FXqLMavnOnWELZgiyFARc3w_SNyv9y6VWgas3uMQktMqas4ufMI0slygFVdbdy1s0P6KO0ctJc_kTqNKkR-aXJzPiGpbGbWBEnqZ6fyBr7jYmppIpJuYt6k4P8XUiHpaD-pg182Rne1ykaMQkfz2L76yb-z8MphraqQahEqIc0JsSXESdFUC8rboCuWDhg6u"><span class="font-display-lg text-headline-md font-serif text-primary font-bold">Sam's Pizza</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Artisanal slow-fermented wood-fired sourdough pies crafted with genuine D.O.P. Italian ingredients and passionate culinary care.</p></div><div class="space-y-space-xs"><h4 class="font-title-md text-title-md text-on-surface font-semibold">Pickup Location</h4><p class="font-body-md text-body-md text-on-surface-variant">142 Elm Street<br>Little Italy District<br>New York, NY 10013</p><p class="font-label-md text-label-md text-tertiary mt-space-xs font-semibold">Dedicated Curbside &amp; Counter Bays</p></div><div class="space-y-space-xs"><h4 class="font-title-md text-title-md text-on-surface font-semibold">Kitchen Hours</h4><div class="font-body-md text-body-md text-on-surface-variant space-y-space-xs"><div class=""><span class="font-semibold text-on-surface">Tue – Thu:</span> 11:30 AM – 10:00 PM</div><div class=""><span class="font-semibold text-on-surface">Fri – Sat:</span> 11:30 AM – 11:30 PM</div><div class=""><span class="font-semibold text-on-surface">Sun:</span> 12:00 PM – 9:30 PM</div><div class=""><span class="font-semibold text-on-surface">Mon:</span> Fermentation &amp; Prep (Closed)</div></div></div><div class="space-y-space-xs"><h4 class="font-title-md text-title-md text-on-surface font-semibold">Order Help &amp; Inquiries</h4><p class="font-body-md text-body-md text-on-surface-variant">Kitchen Desk: (555) 234-PIZZA<br>Email: ciao@samspizza.com</p><div class="pt-space-xs flex items-center gap-space-sm text-secondary"><span class="material-symbols-outlined text-[18px]">timer</span><span class="font-label-md text-label-md font-semibold">Avg Bake Time: 90 Seconds</span></div></div></div><div class="mt-margin pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant"><span class="font-body-md text-body-md">© 2024 Sam's Pizza Co. All rights reserved. Crafted with slow-fire reverence.</span><div class="flex items-center gap-space-lg font-label-md text-label-md"><span class="hover:text-primary cursor-pointer transition-colors">Dietary &amp; Allergens</span><span class="hover:text-primary cursor-pointer transition-colors">Privacy Policy</span><span class="hover:text-primary cursor-pointer transition-colors">Terms of Service</span></div></div></div></footer>
+
+</body></html>
