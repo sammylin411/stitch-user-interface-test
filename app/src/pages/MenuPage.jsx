@@ -6,9 +6,9 @@ import { formatMoney, menuSections } from '../data/menu'
 import { useCart } from '../context/CartContext'
 
 const categoryLinks = [
-  { href: '#pizzas-sec', label: 'Pizzas', icon: 'local_pizza', active: true },
-  { href: '#sides-sec', label: 'Sides', icon: 'lunch_dining' },
-  { href: '#drinks-sec', label: 'Drinks', icon: 'local_bar' },
+  { id: 'pizzas-sec', label: 'Pizzas', icon: 'local_pizza', active: true },
+  { id: 'sides-sec', label: 'Sides', icon: 'lunch_dining' },
+  { id: 'drinks-sec', label: 'Drinks', icon: 'local_bar' },
 ]
 
 export default function MenuPage() {
@@ -55,9 +55,12 @@ export default function MenuPage() {
             <div className="lg:col-span-8 flex flex-col space-y-space-xl">
               <div className="flex items-center gap-space-xs overflow-x-auto pb-space-xs no-scrollbar">
                 {categoryLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
+                  <button
+                    key={link.id}
+                    type="button"
+                    onClick={() =>
+                      document.getElementById(link.id)?.scrollIntoView({ behavior: 'smooth' })
+                    }
                     className={`px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all flex items-center gap-space-xs shrink-0 ${
                       link.active
                         ? 'bg-primary text-on-primary shadow-sm'
@@ -66,7 +69,7 @@ export default function MenuPage() {
                   >
                     <Icon name={link.icon} className="text-[18px]" />
                     {link.label}
-                  </a>
+                  </button>
                 ))}
               </div>
 

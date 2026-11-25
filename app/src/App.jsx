@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Outlet, Route, Routes, useLocation } from 'react-router-dom'
+import { HashRouter, Outlet, Route, Routes, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { CartProvider } from './context/CartContext'
@@ -24,7 +24,7 @@ function Layout() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <CartProvider>
         <Routes>
           <Route element={<Layout />}>
@@ -33,6 +33,6 @@ export default function App() {
           </Route>
         </Routes>
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
